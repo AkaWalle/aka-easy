@@ -1,0 +1,31 @@
+{
+  "name": "projeto-aka-easy",
+  "version": "1.0.0",
+  "description": "Aplicativo AKA EASY para execução de comandos e atalhos",
+  "main": "src/main.js",
+  "author": "José Wallace <wallace.ventura@outlook.com>", 
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^27.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.example.aka-easy",
+    "productName": "AKA EASY",
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "files": [
+      "src/**/*",
+      "assets/**/*"
+    ],
+    "directories": {
+      "output": "dist"
+    }
+  }
+}

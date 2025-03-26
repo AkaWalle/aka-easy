@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AKA EASY</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="sideBar-left" class="sideBar collapsed" role="complementary" aria-label="Barra Lateral Esquerda">
+        <div id="history-content" class="history-content">
+            <h2>Histórico</h2>
+            <button id="clear-history" tabindex="0">Limpar Histórico</button>
+            <ul id="history-list" aria-label="Lista de comandos executados"></ul>
+        </div>
+    </div>
+
+    <div id="sideBar-right" class="sideBar right-sideBar collapsed" role="complementary" aria-label="Barra Lateral Direita">
+        <div id="comandos-lista" class="history-content">
+            <h2>Lista de Atalhos</h2>
+            <ul aria-label="Lista de atalhos disponíveis">
+                <li><strong>Ctrl + P:</strong> Abrir várias abas no navegador</li>
+                <li><strong>Ctrl + /:</strong> Mostrar atalhos</li>
+                <li><strong>Ctrl + ':</strong> Abrir Spotify</li>
+                <li><strong>Ctrl + -:</strong> Abrir Explorador de Arquivos</li>
+                <li><strong>ESC:</strong> Sair do programa</li>
+                <li><strong>Ctrl + ;:</strong> Abrir/Fechar Barra Lateral</li>
+                <li><strong>Ctrl + N:</strong> Abrir Notepad</li>
+                <li><strong>Ctrl + C:</strong> Abrir Calculadora</li>
+                <li><strong>Ctrl + U:</strong> Abrir URL personalizada</li>
+                <li><strong>Ctrl + K:</strong> Abrir CMD</li>
+                <li><strong>Ctrl + T:</strong> Abrir nova janela</li>
+                <li><strong>Ctrl + S:</strong> Salvar configurações</li>
+                <li><strong>Ctrl + R:</strong> Recarregar aplicativo</li>
+                <li><strong>Ctrl + L:</strong> Limpar campo de comando</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>...Aka Easy...</h1>
+        <div class="controls">
+            <button id="toggle-dark-mode" aria-label="Alternar modo escuro/claro">🌙</button>
+        </div>
+        <label for="campo-comando">Ex:</label>
+        <input 
+            type="text" 
+            id="campo-comando" 
+            class="campo-comando" 
+            placeholder="Ctrl+..."
+            aria-label="Digite um comando de atalho" 
+        />
+    </div>
+
+    <footer>
+        <p>© 2025 José Wallace. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
